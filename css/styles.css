@@ -1,0 +1,162 @@
+/* Definindo estilo do corpo */
+body {
+    background-image: url('../img/gif.gif');
+    background-size: 100%;
+    background-repeat: repeat-y;
+    font-family: 'Press Start 2P', cursive;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+}
+
+/* Moldura da página no estilo arcade */
+.arcade-frame {
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #00ff00;
+    background: linear-gradient(145deg, #111 40%, #333 100%);
+    box-shadow: 0px 0px 20px #00ff00;
+}
+
+/* Título principal */
+.arcade-title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+/* Menu no topo com links */
+.arcade-menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.arcade-menu a {
+    color: #ff00ff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.arcade-menu a:hover {
+    text-shadow: 0px 0px 8px #ff00ff;
+    transform: scale(1.2);
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 40px;
+    padding: 10px;
+    border-top: 2px solid #00ff00;
+}
+
+h2 {
+    color: #ffcc00;
+    text-shadow: 2px 2px #000;
+    font-size: 24px;
+}
+
+h4 {
+    color: #00BFFF;
+    text-shadow: 2px 2px #000;
+    font-size: 20px;
+}
+
+/* Projetos com links */
+.project-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project-item a {
+    color: #00ff00;
+    background-color: #333;
+    padding: 10px 20px;
+    border: 2px solid #00ff00;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-item a:hover {
+    background-color: #00ff00;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
+
+.profile-photo {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 20%; /* Torna a imagem redonda, se preferir */
+    display: block; /* Faz a imagem ser tratada como bloco */
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem abaixo */
+    border: 5px solid #00ff00; /* Cor neon da borda */
+    box-shadow: 0 0 10px #00ff00; /* Sombra para dar um efeito neon */
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background-color: #333; /* Fundo da barra */
+    border: 2px solid #00ff00; /* Borda neon */
+    border-radius: 5px;
+    width: 100%; /* Largura total */
+    height: 20px; /* Altura da barra */
+}
+
+.progress {
+    background-color: #00ff00; /* Cor da barra de progresso */
+    height: 100%; /* Preenche a altura total da barra */
+    border-radius: 5px; /* Arredondar bordas */
+    transition: width 0.5s ease; /* Efeito de transição suave */
+}
+
+.contact-box {
+    background-color: #222; /* Fundo escuro */
+    border: 2px solid #00ff00; /* Borda neon */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px #00ff00; /* Sombra neon */
+    color: #fff; /* Cor do texto */
+    margin: 20px auto; /* Centraliza a caixa */
+    max-width: 500px; /* Limita a largura */
+    text-align: center; /* Centraliza o texto */
+}
+
+.contact-box a {
+    color: #00ff00; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.contact-box a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.toggle-button {
+    background-color: #00ff00; /* Cor do botão */
+    border: none;
+    color: #000; /* Texto do botão */
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #00cc00; /* Cor ao passar o mouse */
+}
+
+
+
