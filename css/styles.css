@@ -2,7 +2,7 @@
 body {
     background-image: url('../img/gif.gif');
     background-size: 100%;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     font-family: 'Press Start 2P', cursive;
     color: #00ff00;
     margin: 0;
