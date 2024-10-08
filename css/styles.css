@@ -2,7 +2,7 @@
 body {
     background-image: url('../img/gif.gif');
     background-size: 100%;
-    background-repeat: repeat;
+    background-repeat: repeat-y;
     font-family: 'Press Start 2P', cursive;
     color: #00ff00;
     margin: 0;
@@ -70,6 +70,8 @@ h4 {
 .project-item {
     margin: 20px 0;
     text-align: center;
+    min-width: 100%;
+    transition: transform 0.5s ease;
 }
 
 .project-item a {
@@ -158,11 +160,13 @@ footer {
     background-color: #00cc00; /* Cor ao passar o mouse */
 }
 
+
+
 /* Estilos para o carrossel */
 .carousel {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -237,3 +241,16 @@ button.next:hover {
     }
 }
 
+.project-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.project-cover {
+    width: 100%;
+    max-width: 200px; /* Define o tamanho máximo da imagem */
+    margin-bottom: 15px;
+    border: 3px solid #ff69b4; /* Uma borda combinando com o tema */
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ff1493
+}
