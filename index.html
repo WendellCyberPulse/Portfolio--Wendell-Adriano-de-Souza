@@ -208,8 +208,7 @@
                 }
             });
         });
-    </script>
-    <script>
+
         const prevButton = document.querySelector('.prev');
         const nextButton = document.querySelector('.next');
         const carouselItems = document.querySelector('.carousel-items');
@@ -217,7 +216,6 @@
         let currentIndex = 0;
         const totalItems = document.querySelectorAll('.carousel-item').length;
         const itemWidth = document.querySelector('.carousel-item').offsetWidth + 20; // largura do item + margem
-        
         nextButton.addEventListener('click', () => {
             if (currentIndex < totalItems - 1) {
                 currentIndex++;
@@ -231,10 +229,8 @@
             }
         });
 
-
     </script>
-    
-    
+        
     
 </body>
 </html>
