@@ -209,6 +209,25 @@
             });
         });
     </script>
+    <script>
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const carouselItems = document.querySelector('.carousel-items');
+
+        let scrollPosition = 0;
+        const itemWidth = 320; // Tamanho de cada item + espaçamento
+
+    nextButton.addEventListener('click', () => {
+    scrollPosition -= itemWidth;
+    carouselItems.style.transform = `translateX(${scrollPosition}px)`;
+});
+
+    prevButton.addEventListener('click', () => {
+    scrollPosition += itemWidth;
+    carouselItems.style.transform = `translateX(${scrollPosition}px)`;
+});
+
+    </script>
     
     
     
