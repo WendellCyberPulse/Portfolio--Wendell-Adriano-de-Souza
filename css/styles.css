@@ -199,17 +199,29 @@ footer {
 
 button.prev,
 button.next {
-    background-color: transparent;
+    background-color: #ff1493; /* Cor do botão */
     border: none;
-    color: #ff1493;
+    color: white; /* Cor do texto */
     font-size: 30px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: background-color 0.3s;
+    position: absolute; /* Posicionamento dos botões */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Para garantir que fique sobre o carrossel */
+}
+
+button.prev {
+    left: 10px; /* Botão de voltar à esquerda */
+}
+
+button.next {
+    right: 10px; /* Botão de avançar à direita */
 }
 
 button.prev:hover,
 button.next:hover {
-    color: #ff69b4;
+    background-color: #ff69b4; /* Cor de hover */
 }
 
 /* Ajuste para dispositivos móveis */
@@ -224,3 +236,4 @@ button.next:hover {
         min-width: 200px;
     }
 }
+
