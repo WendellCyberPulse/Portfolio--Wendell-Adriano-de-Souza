@@ -158,38 +158,69 @@ footer {
     background-color: #00cc00; /* Cor ao passar o mouse */
 }
 
+/* Estilos para o carrossel */
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 100%;
     overflow: hidden;
-    position: relative;
     margin-top: 20px;
 }
 
 .carousel-items {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 20px;
 }
 
 .carousel-item {
     min-width: 300px;
-    background-color: #333;
-    color: white;
+    margin: 0 10px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
+    border: 2px solid #ff1493;
     border-radius: 10px;
+    box-shadow: 0 0 10px #ff1493;
 }
 
-button {
-    background-color: #ff1493; /* Cor rosa neon */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carousel h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button.prev,
+button.next {
+    background-color: transparent;
     border: none;
-    color: white;
-    padding: 10px 15px;
+    color: #ff1493;
+    font-size: 30px;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
+button.prev:hover,
+button.next:hover {
+    color: #ff69b4;
+}
 
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 250px;
+    }
+}
 
+@media (max-width: 480px) {
+    .carousel-item {
+        min-width: 200px;
+    }
+}
