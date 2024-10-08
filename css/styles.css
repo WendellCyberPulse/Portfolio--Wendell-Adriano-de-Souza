@@ -158,5 +158,38 @@ footer {
     background-color: #00cc00; /* Cor ao passar o mouse */
 }
 
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+.carousel-item {
+    min-width: 300px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff1493; /* Cor rosa neon */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
 
 
