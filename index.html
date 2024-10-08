@@ -213,19 +213,24 @@
         const prevButton = document.querySelector('.prev');
         const nextButton = document.querySelector('.next');
         const carouselItems = document.querySelector('.carousel-items');
+        
+        let currentIndex = 0;
+        const totalItems = document.querySelectorAll('.carousel-item').length;
+        const itemWidth = document.querySelector('.carousel-item').offsetWidth + 20; // largura do item + margem
+        
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < totalItems - 1) {
+                currentIndex++;
+                carouselItems.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+            }
+        });
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                carouselItems.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+            }
+        });
 
-        let scrollPosition = 0;
-        const itemWidth = 320; // Tamanho de cada item + espaçamento
-
-    nextButton.addEventListener('click', () => {
-    scrollPosition -= itemWidth;
-    carouselItems.style.transform = `translateX(${scrollPosition}px)`;
-});
-
-    prevButton.addEventListener('click', () => {
-    scrollPosition += itemWidth;
-    carouselItems.style.transform = `translateX(${scrollPosition}px)`;
-});
 
     </script>
     
