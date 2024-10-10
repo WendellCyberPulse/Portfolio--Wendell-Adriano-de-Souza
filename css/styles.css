@@ -258,7 +258,7 @@ button.next:hover {
 @media (max-width: 768px) {
     .project-item a {
         display: block;
-        width: 100%;
+        width: 75%;
         text-align: center;
         padding: 10px;
         font-size: 16px;
