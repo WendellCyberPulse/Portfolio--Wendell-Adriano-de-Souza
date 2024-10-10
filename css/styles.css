@@ -119,7 +119,7 @@ footer {
 }
 
 .progress {
-    background-color: #00ff00; /* Cor da barra de progresso */
+    background-color: #ffcc00; /* Cor da barra de progresso */
     height: 100%; /* Preenche a altura total da barra */
     border-radius: 5px; /* Arredondar bordas */
     transition: width 0.5s ease; /* Efeito de transição suave */
