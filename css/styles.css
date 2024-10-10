@@ -266,7 +266,7 @@ button.next:hover {
     }
     button.prev,
     button.next {
-        background-color: #ff1493; /* Cor do botão */
+        background-color: #ff149183; /* Cor do botão */
         border: none;
         color: white; /* Cor do texto */
         font-size: 30px;
