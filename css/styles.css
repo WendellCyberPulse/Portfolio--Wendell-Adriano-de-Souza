@@ -183,6 +183,8 @@ footer {
     padding: 10px;
     cursor: pointer;
     z-index: 10;
+    height:100%;
+    width:50px
 }
 
 .carousel .prev {
