@@ -201,7 +201,18 @@ footer {
     margin: 10px 0;
 }
 
-button.prev,
+button.prev{ 
+    background-color: #ff1493; /* Cor do botão */
+    border: none;
+    color: white; /* Cor do texto */
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; /* Posicionamento dos botões */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Para garantir que fique sobre o carrossel */
+}
 button.next {
     background-color: #ff1493; /* Cor do botão */
     border: none;
