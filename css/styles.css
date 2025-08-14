@@ -1,29 +1,31 @@
 /* Definindo estilo do corpo */
 body {
-    background-image: url('../img/gif.gif');
+    background-image: url('../img/gif3.gif');
     background-size: 100%;
     background-repeat: repeat;
-    font-family: 'Press Start 2P', cursive;
-    color: #00ff00;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Moldura da página no estilo arcade */
 .arcade-frame {
-    width: 800px;
+    width: 90%;
+    max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    border: 5px solid #00ff00;
-    background: linear-gradient(145deg, #111 40%, #333 100%);
-    box-shadow: 0px 0px 20px #00ff00;
+    background: linear-gradient(145deg, #4A0000, #0B0C10);
+    border: 5px solid #EFBF04;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #4A0000;
 }
 
 /* Título principal */
 .arcade-title {
     text-align: center;
     font-size: 32px;
-    color: #ffcc00;
+    color: #EFBF04;
     margin-bottom: 20px;
     text-shadow: 2px 2px #000;
 }
@@ -35,33 +37,37 @@ body {
 }
 
 .arcade-menu a {
-    color: #ff00ff;
+    color: #EFBF04;
     margin: 0 15px;
     text-decoration: none;
     font-size: 18px;
-    transition: all 0.3s;
+    padding: 10px 20px;
+    border: 2px solid#EFBF04;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .arcade-menu a:hover {
-    text-shadow: 0px 0px 8px #ff00ff;
-    transform: scale(1.2);
+    background-color: #EFBF04;
+    color: #FFFFFF;
+    transform: scale(1.1);
 }
 
 /* Estilo das seções */
 section {
     margin-bottom: 40px;
     padding: 10px;
-    border-top: 2px solid #00ff00;
+    border-top: 3px solid #EFBF04;
 }
 
 h2 {
-    color: #ffcc00;
+    color: #EFBF04;
     text-shadow: 2px 2px #000;
     font-size: 24px;
 }
 
 h4 {
-    color: #00BFFF;
+    color: #EFBF04;
     text-shadow: 2px 2px #000;
     font-size: 20px;
 }
@@ -75,16 +81,17 @@ h4 {
 }
 
 .project-item a {
-    color: #00ff00;
-    background-color: #333;
+    color: #FFFFFF;
+    background-color: #4A0000;
     padding: 10px 20px;
-    border: 2px solid #00ff00;
+    border: 2px solid #EFBF04;
     text-decoration: none;
+    border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .project-item a:hover {
-    background-color: #00ff00;
+    background-color: #EFBF04;
     color: #000;
     transform: scale(1.1);
 }
@@ -97,13 +104,13 @@ footer {
 }
 
 .profile-photo {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 20%; /* Torna a imagem redonda, se preferir */
-    display: block; /* Faz a imagem ser tratada como bloco */
-    margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem abaixo */
-    border: 5px solid #00ff00; /* Cor neon da borda */
-    box-shadow: 0 0 10px #00ff00; /* Sombra para dar um efeito neon */
+    width: 150px;
+    height: auto;
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid #EFBF04;
+    box-shadow: 0 0 10px #4A0000;
 }
 
 .skill {
@@ -111,45 +118,45 @@ footer {
 }
 
 .progress-bar {
-    background-color: #333; /* Fundo da barra */
-    border: 2px solid #00ff00; /* Borda neon */
+    background-color: #333;
+    border: 2px solid #4A0000;
     border-radius: 5px;
-    width: 100%; /* Largura total */
-    height: 20px; /* Altura da barra */
+    width: 100%;
+    height: 20px;
 }
 
 .progress {
-    background-color: #ffcc00; /* Cor da barra de progresso */
-    height: 100%; /* Preenche a altura total da barra */
-    border-radius: 5px; /* Arredondar bordas */
-    transition: width 0.5s ease; /* Efeito de transição suave */
+    background-color: #EFBF04;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
 }
 
 .contact-box {
-    background-color: #222; /* Fundo escuro */
-    border: 2px solid #00ff00; /* Borda neon */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 0 10px #00ff00; /* Sombra neon */
-    color: #fff; /* Cor do texto */
-    margin: 20px auto; /* Centraliza a caixa */
-    max-width: 500px; /* Limita a largura */
-    text-align: center; /* Centraliza o texto */
+    background-color: #222;
+    border: 2px solid #EFBF04;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #EFBF04;
+    color: #EFBF04;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
 }
 
 .contact-box a {
-    color: #00ff00; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado */
+    color: #EFBF04;
+    text-decoration: none;
 }
 
 .contact-box a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
+    text-decoration: underline;
 }
 
 .toggle-button {
-    background-color: #00ff00; /* Cor do botão */
+    background-color: #4A0000;
     border: none;
-    color: #000; /* Texto do botão */
+    color: #EFBF04;
     padding: 10px 20px;
     cursor: pointer;
     margin-bottom: 10px;
@@ -157,10 +164,9 @@ footer {
 }
 
 .toggle-button:hover {
-    background-color: #00cc00; /* Cor ao passar o mouse */
+    background-color: #EFBF04;
+    color: #4A0000;
 }
-
-
 
 /* Estilos para o carrossel */
 .carousel {
@@ -183,8 +189,8 @@ footer {
     padding: 10px;
     cursor: pointer;
     z-index: 10;
-    height:100%;
-    width:50px
+    height: 100%;
+    width: 50px;
 }
 
 .carousel .prev {
@@ -195,7 +201,6 @@ footer {
     right: 10px;
 }
 
-
 .carousel-items {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -205,12 +210,12 @@ footer {
     min-width: 300px;
     margin: 0 10px;
     background-color: #222;
-    color: #fff;
+    color: #FFFFFF;
     padding: 10px;
     text-align: center;
-    border: 2px solid #ff1493;
+    border: 2px solid #4A0000;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ff1493;
+    box-shadow: 0 0 10px #4A0000;
 }
 
 .carousel-item img {
@@ -224,42 +229,43 @@ footer {
     margin: 10px 0;
 }
 
-button.prev{ 
-    background-color: #ff1493; /* Cor do botão */
+button.prev {
+    background-color: #EFBF04;
     border: none;
-    color: white; /* Cor do texto */
+    color: white;
     font-size: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
-    position: absolute; /* Posicionamento dos botões */
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10; /* Para garantir que fique sobre o carrossel */
+    z-index: 10;
 }
+
 button.next {
-    background-color: #ff1493; /* Cor do botão */
+    background-color: #EFBF04;
     border: none;
-    color: white; /* Cor do texto */
+    color: white;
     font-size: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
-    position: absolute; /* Posicionamento dos botões */
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10; /* Para garantir que fique sobre o carrossel */
+    z-index: 10;
 }
 
 button.prev {
-    left: 10px; /* Botão de voltar à esquerda */
+    left: 10px;
 }
 
 button.next {
-    right: 10px; /* Botão de avançar à direita */
+    right: 10px;
 }
 
 button.prev:hover,
 button.next:hover {
-    background-color: #ff69b4; /* Cor de hover */
+    background-color: #0B0C10;
 }
 
 /* Ajuste para dispositivos móveis */
@@ -282,12 +288,13 @@ button.next:hover {
 
 .project-cover {
     width: 100%;
-    max-width: 200px; /* Define o tamanho máximo da imagem */
+    max-width: 200px;
     margin-bottom: 15px;
-    border: 3px solid #ff69b4; /* Uma borda combinando com o tema */
+    border: 3px solid #4A0000;
     border-radius: 8px;
-    box-shadow: 0 0 10px #ff1493
+    box-shadow: 0 0 10px #4A0000;
 }
+
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
     .project-item a {
@@ -298,19 +305,20 @@ button.next:hover {
         font-size: 16px;
         margin: 10px 0;
     }
+
     button.prev,
     button.next {
-        background-color: #ff149183; /* Cor do botão */
+        background-color: #4A0000;
         border: none;
-        color: white; /* Cor do texto */
+        color: white;
         font-size: 30px;
         height: 100%;
         width: 50px;
         cursor: pointer;
         transition: background-color 0.3s;
-        position: absolute; /* Posicionamento dos botões */
+        position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 10; /* Para garantir que fique sobre o carrossel */
+        z-index: 10;
     }
 }
