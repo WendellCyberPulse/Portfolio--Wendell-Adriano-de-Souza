@@ -1,6 +1,6 @@
 /* Definindo estilo do corpo */
 body {
-    background-image: url('../img/gif5.gif');
+    background-image: url('../img/gif3.gif');
     background-size: 100%;
     background-repeat: repeat;
     color: #FFFFFF;
@@ -322,3 +322,4 @@ button.next:hover {
         z-index: 10;
     }
 }
+
