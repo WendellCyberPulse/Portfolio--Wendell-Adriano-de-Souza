@@ -1,6 +1,6 @@
 /* Definindo estilo do corpo */
 body {
-    background-image: url('../img/gif3.gif');
+    background-image: url('../img/gif5.gif');
     background-size: 100%;
     background-repeat: repeat;
     color: #FFFFFF;
@@ -213,9 +213,9 @@ footer {
     color: #FFFFFF;
     padding: 10px;
     text-align: center;
-    border: 2px solid #4A0000;
+    border: 2px solid #EFBF04;
     border-radius: 10px;
-    box-shadow: 0 0 10px #4A0000;
+    box-shadow: 0 0 10px #EFBF04;
 }
 
 .carousel-item img {
@@ -290,7 +290,7 @@ button.next:hover {
     width: 100%;
     max-width: 200px;
     margin-bottom: 15px;
-    border: 3px solid #4A0000;
+    border: 3px solid #EFBF04;
     border-radius: 8px;
     box-shadow: 0 0 10px #4A0000;
 }
