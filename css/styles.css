@@ -16,13 +16,6 @@ body {
     margin-bottom: 20px; 
 }
 
-.profile-logo {
-    width: 350px; 
-    height:200px;
-    border-radius: 10px;
-    animation: pulse 2s infinite; 
-}
-
 /* Moldura da página no estilo arcade */
 .arcade-frame {
     width: 90%;
@@ -366,3 +359,4 @@ button.next:hover {
     height: auto;
     margin-right: 10px;
 }
+
