@@ -178,39 +178,24 @@ footer {
 /* Estilos para o carrossel */
 .carousel {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: left;
     position: relative;
     width: 100%;
     overflow: hidden;
     margin-top: 20px;
 }
 
-.carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    height: 100%;
-    width: 50px;
-}
-
-.carousel .prev {
-    left: 10px;
-}
-
-.carousel .next {
-    right: 10px;
-}
-
 .carousel-items {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel-items:active {
+    cursor: grabbing;
 }
 
 .carousel-item {
@@ -223,6 +208,7 @@ footer {
     border: 2px solid #EFBF04;
     border-radius: 10px;
     box-shadow: 0 0 10px #EFBF04;
+    flex-shrink: 0;
 }
 
 .carousel-item img {
@@ -236,49 +222,54 @@ footer {
     margin: 10px 0;
 }
 
-button.prev {
-    background-color: #EFBF04;
-    border: none;
-    color: white;
-    font-size: 30px;
+/* Estilo da barra de rolagem personalizada */
+.carousel-scrollbar {
+    width: 100%;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.scrollbar-track {
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 2px;
+    position: relative;
     cursor: pointer;
-    transition: background-color 0.3s;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
 }
 
-button.next {
+.scrollbar-thumb {
+    position: absolute;
+    height: 100%;
     background-color: #EFBF04;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    min-width: 40px;
 }
 
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
-
-button.prev:hover,
-button.next:hover {
-    background-color: #0B0C10;
+.scrollbar-thumb:hover {
+    background-color: #FFD700;
 }
 
 /* Ajuste para dispositivos móveis */
 @media (max-width: 768px) {
     .carousel-item {
         min-width: 250px;
+    }
+    
+    .carousel-items {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .carousel-item {
+        scroll-snap-align: start;
+    }
+    
+    /* Esconder barra de rolagem padrão no mobile */
+    .carousel-items::-webkit-scrollbar {
+        display: none;
     }
 }
 
@@ -312,22 +303,6 @@ button.next:hover {
         font-size: 16px;
         margin: 10px 0;
     }
-
-    button.prev,
-    button.next {
-        background-color: #4A0000;
-        border: none;
-        color: white;
-        font-size: 30px;
-        height: 100%;
-        width: 50px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-    }
 }
 
 .artstation-link-container {
@@ -359,4 +334,3 @@ button.next:hover {
     height: auto;
     margin-right: 10px;
 }
-
