@@ -22,7 +22,7 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: linear-gradient(145deg, #4A0000, #0B0C10);
+    background: linear-gradient (145deg, #4A0000, #0B0C10);
     border: 5px solid #EFBF04;
     border-radius: 15px;
     box-shadow: 0 0 20px #4A0000;
@@ -366,3 +366,4 @@ footer {
     height: auto;
     margin-right: 10px;
 }
+
